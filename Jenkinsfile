@@ -9,7 +9,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'go build'
+                bat '''
+                call go build
+                '''
             }
         }
     }
